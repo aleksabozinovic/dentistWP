@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  height: 110px;
+}
+.bold {
+  font-weight: bold;
+}
+.container {
+  max-width: 1360px;
+  margin: auto;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--col2 {
+  display: flex;
+}
+.nav--col2 a {
+  margin-left: 3rem;
+  color: rgba(17, 17, 17, 1);
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+
+.hero__section {
+  background-image: url("/images/background__img.jpg");
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__section .hero--container {
+  position: absolute;
+  margin-left: 390px;
+  top: 200px;
+}
+.hero--container h1,
+.hero--container h4,
+.hero--container a {
+  color: #fff;
+  z-index: 5;
+}
+.hero--container h4 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.hero--container h1 {
+  font-size: 92px;
+  text-transform: uppercase;
+  max-width: 640px;
+  font-weight: lighter;
+}
+.hero--container a {
+  position: absolute;
+  top: 350px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #fff;
+  padding: 8px 42px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.hero--container a:hover {
+  background: #fff;
+  color: rgb(154, 170, 52);
+}
+
+/* Plan Visit Div */
+.plan--visit__div {
+  position: relative;
+  margin-left: 390px;
+  margin-right: 390px;
+  bottom: 150px;
+}
+.plan__visit--cont {
+  position: absolute;
+  right: 0;
+  padding: 3rem;
+  background: #fff;
+  box-shadow: 1.25rem 1.375rem 4.75rem 0 rgba(0, 0, 0, 0.22);
+  width: 40%;
+  height: 19rem;
+  text-align: center;
+}
+.plan__visit--cont h2 {
+  font-size: 3.2rem;
+}
+.plan__visit--cont p {
+  margin: 1rem 0;
+}
+.plan__visit--cont a {
+  background: rgb(133, 148, 31);
+  font-size: 1rem;
+  padding: 0.65rem 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Second Section */
+.second__section {
+  margin-top: 15rem;
+}
+.second__section img {
+  width: 100%;
+}
+.second__section .second__section--col2 {
+  margin-left: 210px;
+}
+.second__section .second__section--col2 h2 {
+  font-size: 4rem;
+  font-weight: normal;
+  width: 80%;
+  line-height: 110%;
+}
+.second__section .second__section--col2 h4 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  line-height: 1.75;
+  color: rgba(81, 80, 80, 1);
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  font-weight: lighter;
+}
+.second__section .second__section--col2 p {
+  margin-top: 2rem;
+}
