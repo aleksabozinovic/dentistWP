@@ -150,3 +150,80 @@ nav {
 .second__section .second__section--col2 p {
   margin-top: 2rem;
 }
+
+/* Third Section */
+.third__section {
+  margin-top: 8rem;
+}
+.third__section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.third__section--col1,
+.third__section--col2 {
+  flex: 1;
+}
+.third__section--col1 h2 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.third__section--col2 {
+  display: flex;
+}
+.third__section--col1 a {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: rgba(153, 168, 51, 1);
+  border: 1px solid rgba(153, 168, 51, 1);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.third__section--col1 a:hover {
+  background: rgba(153, 168, 51, 1);
+  color: #fff;
+}
+.third__section--col2 img {
+  width: 230px;
+  margin-left: 0.5rem;
+  height: 100%;
+}
+.third__section--col2 #third__section--center {
+  position: relative;
+  top: 2rem;
+}
+.third__section--col2 .third__section--cases {
+  position: relative;
+}
+.third__section--col2 .third__section--cases::after {
+  position: absolute;
+  content: "";
+  background: rgba(27, 28, 33, 1);
+  width: 230px;
+  height: 100%;
+  left: 9.5px;
+  top: 0;
+  opacity: 0.3;
+}
+.third__section .person__info {
+  margin-left: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  padding: 4rem 1.5rem 3rem;
+  z-index: 5;
+}
+.third__section .person__title p {
+  opacity: 0.65;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1.5rem rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 1);
+}
+.third__section .person__title h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1.5rem rgba(0, 0, 0, 0.5);
+  font-weight: normal;
+  margin-top: 5px;
+}
