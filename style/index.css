@@ -227,3 +227,109 @@ nav {
   font-weight: normal;
   margin-top: 5px;
 }
+
+/* Fourth Section */
+.fourth__section {
+  margin-top: 10rem;
+}
+.fourth__section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.fourth__section--col1,
+.fourth__section--col2 {
+  flex: 1;
+}
+.fourth__section--col2 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.fourth__section--col1 img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+
+.fourth__section--col2 h2 {
+  font-size: 4rem;
+  position: relative;
+  margin-left: 30%;
+  padding-bottom: 2rem;
+}
+
+.fourth__section--col2 h2::after {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  position: relative;
+  border-bottom: 3px solid rgba(153, 168, 51, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.fourth__section--col2 h5 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: rgba(81, 80, 80, 1);
+  margin-left: 30%;
+  font-weight: normal;
+  line-height: 1.6;
+}
+.fourth__section--col2 p {
+  line-height: 1.75;
+  margin-top: 2rem;
+  color: rgba(81, 80, 80, 1);
+  margin-left: 30%;
+}
+
+/* Fifth Section */
+.fifth__section {
+  margin-top: 8rem;
+}
+.fifth__section--col1,
+.fifth__section--col2 {
+  flex: 1;
+}
+.fifth__section--col1 h2 {
+  font-size: 3rem;
+  line-height: 1.25;
+  color: rgba(27, 28, 33, 1);
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.fifth__section--col1 h2::after {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  position: relative;
+  border-bottom: 3px solid rgba(153, 168, 51, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.fifth__section--col1 p {
+  margin-top: 2rem;
+  line-height: 1.7;
+  font-size: 1.3rem;
+  color: rgba(81, 80, 80, 1);
+  width: 75%;
+  margin-bottom: 4rem;
+}
+.fifth__section--col1 a {
+  color: rgba(153, 168, 51, 1);
+  border: 1px solid rgba(153, 168, 51, 1);
+  line-height: 1.25;
+  font-size: 1rem;
+  padding: 0.65rem 1.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.fifth__section--col1 a:hover {
+  background: rgba(153, 168, 51, 1);
+  color: #fff;
+}
+.fifth__section--col2 {
+  box-shadow: 3px 0px 11px #6f6f6f87;
+}
