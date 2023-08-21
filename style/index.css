@@ -333,3 +333,102 @@ nav {
 .fifth__section--col2 {
   box-shadow: 3px 0px 11px #6f6f6f87;
 }
+
+/* Seventh Section */
+.seventh__section {
+  background-image: url("/images/seventh__section--bg.JPG");
+  margin-top: 8rem;
+  padding: 144px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seventh__section--col1 {
+  flex: 2;
+}
+.seventh__section--col2 {
+  flex: 1;
+  margin-left: 10rem;
+}
+.seventh__section .container {
+  display: flex;
+}
+.seventh__section--col1 {
+  height: 500px;
+  background: #fff;
+}
+.seventh__section--col2 h2 {
+  font-size: 3.4rem;
+  line-height: 1.25;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.seventh__section--col2 p {
+  color: #fff;
+  line-height: 1.75;
+  font-family: "Poppins", sans-serif;
+  margin-right: 5rem;
+}
+
+/* Eight Section */
+
+.eight__section {
+  margin-top: 5rem;
+  position: relative;
+}
+.eight__section .container {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  width: auto !important;
+  max-width: 100%;
+  position: absolute;
+  top: 35rem;
+}
+.eight__section h2 {
+  position: relative;
+  font-size: 5.5rem;
+  padding-bottom: 2rem;
+}
+.eight__section h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  width: 4rem;
+  border-bottom: 3px solid rgba(153, 168, 51, 1);
+}
+.eight__section img {
+  margin-top: 2rem;
+  box-shadow: 1.25rem 1.375rem 4.75rem 0 rgba(0, 0, 0, 0.22) !important;
+}
+
+.eight__section h5 {
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.75;
+  margin: 3rem 0;
+  color: rgba(81, 80, 80, 1);
+}
+.eight__section--boxes--2 {
+  margin-top: 2rem;
+}
+
+.eight__section--boxes--1,
+.eight__section--boxes--2 {
+  display: flex;
+}
+.eight__section--box {
+  flex: 1;
+}
+.eight__section--box h3 {
+  color: rgba(27, 28, 33, 1);
+  line-height: 1.25;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
