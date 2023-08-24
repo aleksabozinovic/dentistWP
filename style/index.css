@@ -457,6 +457,7 @@ nav {
   background: #9aac34 url("/images/pre--footer__bg.png");
   padding: 4rem 350px;
   background-size: 15%;
+  margin-top: 3rem;
 }
 .pre--footer h3 {
   font-family: "Poppins";
