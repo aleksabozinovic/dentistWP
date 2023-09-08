@@ -1,0 +1,29 @@
+@import url("./general.css");
+/* Second Section */
+.second__section {
+  margin-top: 3rem;
+}
+.second__section img {
+  width: 100%;
+}
+.second__section .second__section--col2 {
+  margin-left: 210px;
+}
+.second__section .second__section--col2 h2 {
+  font-size: 4rem;
+  font-weight: normal;
+  width: 80%;
+  line-height: 110%;
+}
+.second__section .second__section--col2 h4 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  line-height: 1.75;
+  color: rgba(81, 80, 80, 1);
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  font-weight: lighter;
+}
+.second__section .second__section--col2 p {
+  margin-top: 2rem;
+}

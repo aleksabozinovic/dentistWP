@@ -1,44 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Montserrat", sans-serif;
-}
-li {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-nav {
-  height: 110px;
-}
-.bold {
-  font-weight: bold;
-}
-.container {
-  max-width: 1360px;
-  margin: auto;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav--col2 {
-  display: flex;
-}
-.nav--col2 a {
-  margin-left: 3rem;
-  color: rgba(17, 17, 17, 1);
-  font-weight: bold;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
+@import url("./general.css");
 
 /* Hero Section */
 
@@ -157,17 +117,22 @@ nav {
 }
 .third__section .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .third__section--col1,
 .third__section--col2 {
   flex: 1;
 }
+.third__section--col1 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
 .third__section--col1 h2 {
   font-size: 3.3rem;
   font-weight: bold;
-  width: 80%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .third__section--col2 {
@@ -186,8 +151,8 @@ nav {
   color: #fff;
 }
 .third__section--col2 img {
-  width: 230px;
   margin-left: 0.5rem;
+  width: 95%;
   height: 100%;
 }
 .third__section--col2 #third__section--center {
@@ -196,12 +161,15 @@ nav {
 }
 .third__section--col2 .third__section--cases {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .third__section--col2 .third__section--cases::after {
   position: absolute;
   content: "";
   background: rgba(27, 28, 33, 1);
-  width: 230px;
+  width: 95%;
   height: 100%;
   left: 9.5px;
   top: 0;
@@ -219,10 +187,11 @@ nav {
   text-transform: uppercase;
   text-shadow: 1px 1px 1.5rem rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 1);
+  font-size: 10px;
 }
 .third__section .person__title h5 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 16px;
   text-shadow: 1px 1px 1.5rem rgba(0, 0, 0, 0.5);
   font-weight: normal;
   margin-top: 5px;
@@ -451,67 +420,6 @@ nav {
   color: rgba(17, 135, 197, 1);
 }
 
-/* Pre footer */
-
-.pre--footer {
-  background: #9aac34 url("/images/pre--footer__bg.png");
-  padding: 4rem 350px;
-  background-size: 15%;
-  margin-top: 3rem;
-}
-.pre--footer h3 {
-  font-family: "Poppins";
-  color: #fff;
-  line-height: 1.75;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: normal;
-}
-.pre--footer a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/* Footer  */
-footer {
-  background: #1b1c21;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 0;
-}
-footer a {
-  color: #fff;
-}
-footer p {
-  color: rgba(167, 167, 167, 1);
-  font-family: "Poppins";
-  line-height: 1.75;
-  font-size: 14px;
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  margin-top: 3rem;
-}
-.footer--pre {
-  border-bottom: 1px solid rgba(167, 167, 167, 0.219);
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 3rem;
-}
-.footer--links {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-.footer--links li {
-  margin-right: 1rem;
-}
-.footer--links li:last-child {
-  margin-right: 0;
-}
-
 @media screen and (max-width: 1634px) {
   .plan__visit--cont {
     height: 25rem;
@@ -528,9 +436,6 @@ footer p {
 }
 
 @media screen and (max-width: 1440px) {
-  .container {
-    max-width: 1150px;
-  }
   .fourth__section--col2 h2,
   .fourth__section--col2 h5,
   .fourth__section--col2 p {
@@ -566,9 +471,7 @@ footer p {
   .hero__section .hero--container {
     margin-left: 55px;
   }
-  .container {
-    max-width: 920px;
-  }
+
   .second__section .second__section--col2 {
     margin-left: 80px;
   }
@@ -678,10 +581,7 @@ footer p {
   .eight__section h2 {
     font-size: 2.2rem;
   }
-  .pre--footer {
-    padding: 4rem 110px;
-    background-size: 25%;
-  }
+
   .seventh__section--col1 {
     flex: none;
     width: 70%;
@@ -710,77 +610,53 @@ footer p {
   }
 }
 
-@media screen and (max-width: 980px) {
-  .nav--col2 a {
-    margin-left: 1.5rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-  .nav--col2 {
-    display: none;
-  }
   .third__section--col2 #third__section--center {
     display: none;
   }
   .hero--container a {
     top: 200px;
   }
-  .eight__section--boxes {
-    margin: 0 10px;
-  }
-  .pre--footer {
-    padding: 4rem 5px;
-  }
-  .pre--footer h3 {
-    font-size: 1rem;
-  }
-}
 
-@media screen and (max-width: 550px) {
-  .third__section--col2 .third__section--cases:first-child {
-    display: none;
+  @media screen and (max-width: 550px) {
+    .third__section--col2 .third__section--cases:first-child {
+      display: none;
+    }
   }
-}
 
-@media screen and (max-width: 425px) {
-  .hero__section .hero--container {
-    margin-left: 10px;
+  @media screen and (max-width: 425px) {
+    .hero__section .hero--container {
+      margin-left: 10px;
+    }
+    .second__section img {
+      width: 90%;
+    }
+    .fifth__section--col1 p {
+      width: 100%;
+    }
+    .second__section .second__section--col2 h2,
+    .third__section--col1 h2,
+    .fourth__section--col2 h2,
+    .seventh__section--col2 h2,
+    .eight__section h2,
+    .fifth__section--col1 h2 {
+      font-size: 1.5rem;
+    }
+    .second__section .second__section--col2 h4,
+    .fourth__section--col2 h5,
+    .fifth__section--col1 p {
+      font-size: 1.1rem;
+    }
+    .seventh__section--col1 {
+      width: 100%;
+    }
+    .hero--container h1 {
+      font-size: 40px;
+    }
+    .fourth__section--col2 h2,
+    .fourth__section--col2 h5,
+    .fourth__section--col2 p {
+      width: 100%;
+    }
   }
-  .second__section img {
-    width: 90%;
-  }
-  .fifth__section--col1 p {
-    width: 100%;
-  }
-  .second__section .second__section--col2 h2,
-  .third__section--col1 h2,
-  .fourth__section--col2 h2,
-  .seventh__section--col2 h2,
-  .eight__section h2,
-  .fifth__section--col1 h2 {
-    font-size: 1.5rem;
-  }
-  .second__section .second__section--col2 h4,
-  .fourth__section--col2 h5,
-  .fifth__section--col1 p {
-    font-size: 1.1rem;
-  }
-  .seventh__section--col1 {
-    width: 100%;
-  }
-  .hero--container h1 {
-    font-size: 40px;
-  }
-  .fourth__section--col2 h2,
-  .fourth__section--col2 h5,
-  .fourth__section--col2 p {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 425px) {
 }
