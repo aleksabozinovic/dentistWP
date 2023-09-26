@@ -197,6 +197,11 @@
   margin-top: 5px;
 }
 
+.third__section--col1 p {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
 /* Fourth Section */
 .fourth__section {
   margin-top: 10rem;
