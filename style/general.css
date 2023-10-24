@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: logo-font;
+  src: url("/font/josephsophia.ttf");
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -21,7 +27,7 @@ nav {
   font-weight: bold;
 }
 .container {
-  max-width: 1360px;
+  max-width: 1440px;
   margin: auto;
   display: flex;
   height: 100%;
@@ -30,6 +36,14 @@ nav {
 }
 
 /* Navigation */
+
+.nav--col1 a {
+  font-family: logo-font;
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+}
+
 .nav--col2 {
   display: flex;
 }
@@ -89,6 +103,10 @@ footer p {
   justify-content: center;
   display: flex;
   padding-bottom: 3rem;
+}
+.footer--pre a {
+  font-size: 36px;
+  font-family: logo-font;
 }
 .footer--links {
   display: flex;

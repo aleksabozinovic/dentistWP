@@ -26,4 +26,10 @@
 }
 .second__section .second__section--col2 p {
   margin-top: 2rem;
+  font-size: 18px;
+  line-height: 26px;
+}
+.second__section--col1,
+.second__section--col2 {
+  flex: 1;
 }
